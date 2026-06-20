@@ -152,7 +152,7 @@ export default function HomeScreen() {
 
                 renderItem={({ item }) => (
                     <View className="px-5">
-                        <Text>{item.title}</Text>
+                        {/* <Text>{item.title}</Text> */}
                         <PropertyCard property={item} />
                     </View>
                 )}
