@@ -1,5 +1,7 @@
-import { Iconicons } from "@expo/vector-icons";
-import { Icon, Label, NativeTabs, Tabs } from 'expo-router/unstable-native-tabs';
+//import { Iconicons } from "@expo/vector-icons";
+import { Ionicons } from "@expo/vector-icons";
+import { Tabs } from "expo-router";
+import { Icon, Label, NativeTabs } from 'expo-router/unstable-native-tabs';
 import { Platform } from "react-native";
 import { useUserStore } from "../../../store/userStore";
 
@@ -15,35 +17,40 @@ function AndroidTabs() {
             <Tabs.Screen name = "index" options = {{
                 title: "Home",
                 tabBarIcon: ({ color, size}) => (
-                    <Iconicons name = "home" color = {color} size={size}/>
+                    // <Iconicons name = "home" color = {color} size={size}/>
+                    <Ionicons name = "home" color = {color} size={size}/>
                 ),
             }} />
 
             <Tabs.Screen name = "search" options = {{
                 title: "Search",
                 tabBarIcon: ({ color, size}) => (
-                    <Iconicons name = "search" color = {color} size={size}/>
+                    <Ionicons name = "search" color = {color} size={size}/>
+                    // <Iconicons name = "search" color = {color} size={size}/>
                 ),
             }} />
 
             <Tabs.Screen name = "create" options = {{
                 title: "Add",
                 tabBarIcon: ({ color, size}) => (
-                    <Iconicons name = "add-circle" color = {color} size={size}/>
+                    <Ionicons name = "add-circle" color = {color} size={size}/>
+                    // <Iconicons name = "add-circle" color = {color} size={size}/>
                 ),
             }} />
 
             <Tabs.Screen name = "saved" options = {{
                 title: "Saved",
                 tabBarIcon: ({ color, size}) => (
-                    <Iconicons name = "heart" color = {color} size={size}/>
+                    <Ionicons name = "heart" color = {color} size={size}/>
+                    // <Iconicons name = "heart" color = {color} size={size}/>
                 ),
             }} />
 
             <Tabs.Screen name = "profile" options = {{
                 title: "Profile",
                 tabBarIcon: ({ color, size}) => (
-                    <Iconicons name = "person" color = {color} size={size}/>
+                    <Ionicons name = "person" color = {color} size={size}/>
+                    // <Iconicons name = "person" color = {color} size={size}/>
                 ),
             }} />
 
