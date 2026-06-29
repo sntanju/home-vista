@@ -154,7 +154,7 @@ export default function SignIn() {
                     <Text className='text-gray-500' > Don&apos;t have an account? </Text>
                     <Link href='/sign-up'>
                         <Text className='text-blue-600 font-semibold'> Sign Up</Text>
-                    </Link> {" "}
+                    </Link>
                 </View>
 
                 <View nativeID='clerk-captcha' />
